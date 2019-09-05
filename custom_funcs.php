@@ -4,8 +4,8 @@
          - function names are NOT case sensitive e.g greetFriends() and greetfriends() are same function
       */
       //inserting a function
-      function greetFriends($name="Panos"){
-         return "Hello $name";
+      function greetFriends($nameFirst="Panos", $nameLast="Papadopoulos"){
+         return "Hello $nameFirst $nameLast";
       }
       function myName($name="Lambros"){
          echo "My name is $name";
@@ -22,7 +22,7 @@
 		<h1>PHP Custom Functions - keeping your code clean</h1>
    <?php
       // PHP code goes 
-      echo greetfriends("Maria")."<br>"; // PHP function names are NOT case sensitive
+      echo greetfriends()."<br>"; // PHP function names are NOT case sensitive
                                   // browser will display "Hello Maria"
       myName();    // function already echoed in declaration
    ?>
