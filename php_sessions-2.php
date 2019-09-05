@@ -22,6 +22,16 @@
          $_SESSION["favanimal"] = "cat";
          print_r($_SESSION);
     ?>
+
+    <h2>Destroy session variables</h2>
+    <?php 
+      // remove all session variables
+         session_unset();
+      // destroy all session variables
+
+      // print session variables
+      print_r($_SESSION);
+    ?>
     <h2>Use sessions in a variable in a conditional statement!</h2>
 
 </body>
