@@ -16,6 +16,12 @@
     <?php 
          print_r($_SESSION);
     ?>
+    <h2>Reset session variables</h2>
+    <?php
+         $_SESSION["favcolor"] = "green";
+         $_SESSION["favanimal"] = "cat";
+         print_r($_SESSION);
+    ?>
     <h2>Use sessions in a variable in a conditional statement!</h2>
 
 </body>
