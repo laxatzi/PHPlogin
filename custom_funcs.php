@@ -4,6 +4,9 @@
       function greetFriends($name="Panos"){
          return "Hello $name";
       }
+      function myName($name="Lambros"){
+         echo "My name is $name";
+      }
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,9 +19,9 @@
 		<h1>PHP Custom Functions - keeping your code clean</h1>
    <?php
       // PHP code goes 
-      echo greetfriends("Maria"); // PHP function names are NOT case sensitive
+      echo greetfriends("Maria")."<br>"; // PHP function names are NOT case sensitive
                                   // browser will display "Hello Maria"
-
+      myName();    // function already echoed in declaration
    ?>
 
 	</body>
