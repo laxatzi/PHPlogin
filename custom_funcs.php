@@ -1,5 +1,8 @@
 <?php
-      //php code goes here
+      /*
+         - a function name can start either with a letter of an underscore but NOT with a number
+         - function names are NOT case sensitive e.g greetFriends() and greetfriends() are same function
+      */
       //inserting a function
       function greetFriends($name="Panos"){
          return "Hello $name";
