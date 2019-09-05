@@ -34,6 +34,21 @@
     ?>
     <h2>Use sessions in a variable in a conditional statement!</h2>
 
+    <?php 
+         // create new session variable
+         $_SESSION["favcar"] = "audi";
+
+         //unset($_SESSION["favcar"]);
+
+         if(isset($_SESSION["favcar"])) {
+            echo "It has been set! It is: ".$_SESSION["favcar"];
+         }
+         else {
+            echo "It has not been set yet!";
+            $_SESSION["isAnswered"] = "No";
+         }
+    ?>
+
 </body>
 </html>
 
