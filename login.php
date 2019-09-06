@@ -18,7 +18,17 @@
          </ul>
       </nav>
       <main>
-            <!-- PHP code goes here! -->
+      
+           <?php
+      //The user logged in - don't show form and confuse the poor guy!
+
+              if(isset($_SESSION['isLoggedIn'])){
+                echo "<p>You are already logged in!</p>";
+              }
+              else{
+                  
+              }
+            ?>
       </main>
 </body>
 </html>
