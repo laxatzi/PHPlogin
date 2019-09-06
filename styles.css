@@ -6,7 +6,7 @@ main, nav {display: block;}
 main {
 width: 80%;  
 height: 400px;
-background-color: rgba(29, 44, 175, 0.25);
+background-color: rgb(13, 26, 126);
 margin-right: auto;
 margin-left: auto;
 padding: 10px;
@@ -15,7 +15,7 @@ border-radius: 25px;
 }
 
 main h2 {
-  font-family: Calligraffitti;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   /*background-color: yellow;*/
   margin-bottom: 0px;
