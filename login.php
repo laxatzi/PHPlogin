@@ -43,6 +43,15 @@
                   echo $myForm;
               }
             ?>
+
+ <!-- using the querystring to send messages back to this login page. -->
+            <?php
+                       $isBlock =  $_POST["isBlock"];
+                       $badUserCredentials = $_POST["badUserCredentials"];
+
+               
+            ?>
+
       </main>
 </body>
 </html>
