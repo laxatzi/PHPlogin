@@ -1,7 +1,13 @@
 <?php
       //start the session
       session_start();
-      
+   // check session to see if they logged in:
+      if(isset($_SESSION['isLoggedIn'])) {
+          //do nothing, the user logged in.
+        } else {
+         header('Location: login.php?isBlock=true');
+     }
+
 ?>
 <!DOCTYPE html>
 <html>
