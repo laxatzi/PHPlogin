@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 	
-	<title>Form processing - Protected page.</title>
+	<title>Form processing - Logout page.</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 <body>

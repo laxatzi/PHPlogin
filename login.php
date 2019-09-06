@@ -31,7 +31,7 @@
                      <p>Welcome to WheatBook!</p>
                      <h2>Please enter your user name and password to log in:</h2>
                   
-                     <form method='post' action='login_response.php'>
+                     <form method='post' action='login-response.php'>
                   
                         <input type='text' name='userName' id='username'>
                         <input type='password' name='password'>
@@ -46,8 +46,8 @@
 
  <!-- using the querystring to send messages back to this login page. -->
             <?php
-                       $isBlock =  $_POST["isBlock"];
-                       $badUserCredentials = $_POST["badUserCredentials"];
+                       $isBlock =  $_GET["isBlock"];
+                       $badUserCredentials = $_GET["badUserCredentials"];
 
          // conditional to decide which message to send via querystring
                     if(isset($isBlock)) {
