@@ -40,6 +40,20 @@ THEFORM;
                echo $theForm; // end of heredoc
             }
        ?>
+
+       <?php 
+            if(isset($_GET['isBlock'])){
+               $isBlock = $_GET['isBlock'];
+            }
+
+            if(isset($isBlock)){
+               echo $isBlock;
+            }
+
+            if(isset($_GET['badUserCredentials'])){
+               $badUserCredentials = $_GET['badUserCredentials'];
+            }
+       ?>
    </main>
 </body>
 </html>
