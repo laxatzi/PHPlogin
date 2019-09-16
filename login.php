@@ -38,16 +38,25 @@
                         <input type='submit'>
                   
                      </form>
-                  MYFORM;
+MYFORM;
 
                   echo $myForm;
               }
             ?>
 
- <!-- using the querystring to send messages back to this login page. -->
             <?php
-                       $isBlock =  $_GET["isBlock"];
-                       $badUserCredentials = $_GET["badUserCredentials"];
+
+                       if(isset($_GET["isBlock"])){
+                           $isBlock =  $_GET["isBlock"];
+
+                       }
+                       if(isset($isBlock)){ 
+                        echo $isBlock;
+                    }
+                       if(isset($_GET["badUserCredentials"])){
+                        $badUserCredentials = $_GET["badUserCredentials"];
+
+                       }
 
          // conditional to decide which message to send via querystring
                     if(isset($isBlock)) {
@@ -55,7 +64,7 @@
                      echo "<h2>Ah, ah, aaaaah ... you need to log in buddy!</h2>";
                      echo "<script>document.getElementById('username').focus();</script>";
                
-                   } else if(isset($badUserCredentials)) {
+                   } else if(($badUserCredentials)) {
                
                      echo "<h2>User name OR password is wrong buddy!</h2>";
                      echo "<script>document.getElementById('username').focus();</script>";
@@ -64,5 +73,6 @@
             ?>
 
       </main>
+
 </body>
 </html>
