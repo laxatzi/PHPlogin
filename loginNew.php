@@ -42,23 +42,15 @@ THEFORM;
        ?>
 
        <?php 
-            if(isset($_GET['isBlock'])){
+           
                $isBlock = $_GET['isBlock'];
-            }
-
-            if(isset($isBlock)){
-               echo $isBlock;
-            }
-
-            if(isset($_GET['badUserCredentials'])){
                $badUserCredentials = $_GET['badUserCredentials'];
-            }
-
-               // conditional to decide which message to send via querystring
-            if(isset($isBlock)){
+            
+// conditional to decide which message to send via querystring
+            if(($isBlock)){
                echo "<h2>You need to log in buddy!</h2>";
                echo "<script>document.getElementById('username').focus();</script>";
-            }else if(isset($badUserCredentials)){
+            }else if(($badUserCredentials)){
                echo "<h2>>User name OR password is wrong buddy!</h2>";
                echo "<script>document.getElementById('username').focus();</script>";
             }
