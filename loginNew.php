@@ -14,7 +14,7 @@
    <nav>
       <ul>
          <li><a href="login.php">Home</a></li> 
-         <li><a href="protected-page.php">Protected Page</a></li> 
+         <li><a href="protected-pageNew.php">Protected Page</a></li> 
          <li><a href="#">Contact</a></li> 
          <li><a href="logout.php">Logout</a></li> 
       </ul>
@@ -36,7 +36,7 @@
                   <input type="password" name="password">
                   <input type="submit" value="Submit Form">
                </form>
-   THEFORM;
+THEFORM;
                echo $theForm; // end of heredoc
             }
        ?>
