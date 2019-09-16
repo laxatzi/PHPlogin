@@ -26,8 +26,18 @@
             if(isset($_SESSION['isLoggedIn'])) {
                echo "<p>You are already logged in buddy!</p>";
             }
-            else {
+            else {  // Use Heredoc to echo out the form
+               $theForm = <<<THEFORM
 
+               <p>Welcome to WheatBook!</p>
+               <h2>Please enter your user name and your password to log in: </h2>
+               <form action="login-response.php" method="POST">
+                  <input type="text" name="username" id="username">
+                  <input type="password" name="password">
+                  <input type="submit" value="Submit Form">
+               </form>
+   THEFORM;
+               echo $theForm; // end of heredoc
             }
        ?>
    </main>
