@@ -20,7 +20,16 @@
       </ul>
    </nav>
    <main>
-       
+       <!-- php code here -->
+       <?php 
+            // check if user is already logged in - if so...do not show form and confuse
+            if(isset($_SESSION['isLoggedIn'])) {
+               echo "<p>You are already logged in buddy!</p>";
+            }
+            else {
+
+            }
+       ?>
    </main>
 </body>
 </html>
