@@ -11,4 +11,13 @@ passwords.
 .. But alas, we are just noob nerds, so we are doing something simple. 
 
 */
+
+$username = $_POST["username"];
+
+    if(trim($username)==="Lambros") {
+      $_SESSION['isLoggedIn']=true;
+      header('Location: protected-pageNew.php');
+    }else{
+         header('Location: loginNew.php?badUserCredentials=true');
+    }
 ?>
