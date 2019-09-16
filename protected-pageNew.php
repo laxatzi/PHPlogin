@@ -1,10 +1,10 @@
 <?php 
    //start the session_abort
-   start_session();
+   session_start();
 
    // check session to see if logged in 
 
-   if(isset($_SESSION['isLoggedIn'])){
+   if(isset($_SESSION["isLoggedIn"])){
 
    }else{
       header('Location: loginNew.php?isBlock=true');
@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
 
-  <title>Protected page.</title>
+  <title>Protected page</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 <body>

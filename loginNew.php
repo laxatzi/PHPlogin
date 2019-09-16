@@ -13,10 +13,10 @@
 <body>
    <nav>
       <ul>
-         <li><a href="login.php">Home</a></li> 
+         <li><a href="loginNew.php">Home</a></li> 
          <li><a href="protected-pageNew.php">Protected Page</a></li> 
          <li><a href="#">Contact</a></li> 
-         <li><a href="logout.php">Logout</a></li> 
+         <li><a href="logoutNew.php">Logout</a></li> 
       </ul>
    </nav>
    <main>
@@ -43,11 +43,11 @@ THEFORM;
 
        <?php 
            
-               $isBlock = $_GET['isBlock'];
-               $badUserCredentials = $_GET['badUserCredentials'];
+               $isBlock = $_GET["isBlock"];
+               $badUserCredentials = $_GET["badUserCredentials"];
             
 // conditional to decide which message to send via querystring
-            if(($isBlock)){
+            if(isset($isBlock)){
                echo "<h2>You need to log in buddy!</h2>";
                echo "<script>document.getElementById('username').focus();</script>";
             }else if(($badUserCredentials)){
