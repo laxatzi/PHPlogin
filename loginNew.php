@@ -53,6 +53,15 @@ THEFORM;
             if(isset($_GET['badUserCredentials'])){
                $badUserCredentials = $_GET['badUserCredentials'];
             }
+
+               // conditional to decide which message to send via querystring
+            if(isset($isBlock)){
+               echo "<h2>You need to log in buddy!</h2>";
+               echo "<script>document.getElementById('username').focus();</script>";
+            }else if(isset($badUserCredentials)){
+               echo "<h2>>User name OR password is wrong buddy!</h2>";
+               echo "<script>document.getElementById('username').focus();</script>";
+            }
        ?>
    </main>
 </body>
