@@ -21,17 +21,41 @@
             </div>
          </div>
          <div class="form_item">
-            .form
-            <label for="phone">Phone:</label>
-            <input type="number" id="phone" name="phone">
+            <div class="form_item-first">
+                <label for="phone">Phone:</label>
+            </div>
+            <div class="form_item-second">
+                <input type="number" id="phone" name="phone">
+            </div>
          </div>
-            <label for="email">Email: <em>*</em> </label>
-            <input type="email" id="email" name="email">
-            <label for="fax">Fax: <em>*</em> </label>
-            <input type="number" id="fax" name="fax">
-            <label for="comments">Comments: <em>*</em> </label>
-            <p class="required_fields">* required fields</p>
-            <input type="submit" name="submit" id="submit">
+         <div class="form_item">
+            <div class="form_item-first">
+                <label for="email">Email: <em>*</em> </label>
+            </div>
+            <div class="form_item-second">
+               <input type="email" id="email" name="email">
+            </div>
+         </div>
+         <div class="form_item">
+            <div class="form_item-first">
+                <label for="fax">Fax: <em>*</em> </label>
+            </div>
+            <div class="form_item-second">
+                <input type="number" id="fax" name="fax">
+            </div>
+         </div>
+         <div class="form_item">
+            <div class="form_item-first">
+                <label for="comments">Comments: <em>*</em> </label>
+            </div>
+            <div class="form_item-second">
+                <textarea class="form-control"    placeholder="Comment here..."></textarea>
+            </div>
+         </div>
+         <div class="form-item">
+            <input type="submit" name="submit" id="submit" value="Send">
+         </div>
+         <small class="fine"><span class="aster">&ast;</span>Fields marked with asterisk are mandatory</small>
          </div>
       </form>
    </div>
