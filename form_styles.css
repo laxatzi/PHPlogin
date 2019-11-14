@@ -4,7 +4,7 @@
    --contactformBgMain: #fafafa;
    --contactformBgSecond: #959697;
    --contactformDistinct: #4557bb;
-   --contactformDistinct: rgb(233, 41, 41);
+   --contactformDanger: rgb(233, 41, 41);
 }
 
 html {
@@ -73,10 +73,9 @@ p {
 .form_item-first {
    justify-content: flex-end;
    align-items: center;
-   padding: 1rem 3rem;
    flex: 1;
-
 }
+
 .form_item-second {
    justify-content: flex-start;
    flex: 2;
@@ -84,14 +83,40 @@ p {
    display: flex;
    flex-direction: column;
 }
+
 textarea,
 input {
-   width: 60%;
+   width: 50%;
    border: 1px solid var(--contactformSecond);
    border-radius: 5px;
-  padding: .5rem 1rem;
+   padding: .8rem;
+   font-size: 1.35rem;
 }
-.form_submit {
-   border: 1px solid red;
 
+.form_submit {
+   display: flex;
+   width: 100%;
+   margin: 20px auto;
+}
+
+input[type="submit"]{
+   width: 25%;
+   display: block;
+   margin: 0 auto;
+   padding: .8rem;
+   background-color: var(--contactformDistinct);
+   color: var(--contactformBgMain);
+   font-size: 2rem;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+   background-color:var(--contactformDanger);
+}
+.fine {
+   color: var(--contactformDanger);
+}
+span.aster {
+   color: var(--contactformDanger);
+   margin: .2rem;
 }
