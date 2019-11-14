@@ -1,5 +1,47 @@
 :root {
    --contactformMain: #222;
    --contactformSecond: rgb(102, 102, 102);
-   --contactformBgMain: 
+   --contactformBgMain: #fafafa;
+   --contactformBgSecond: #959697;
+   --contactformDistinct: #4557bb;
+   --contactformDistinct: rgb(233, 41, 41);
 }
+
+html {
+   box-sizing: border-box;
+   font-size: 10px;
+}
+
+
+*,
+*:before,
+*:after {
+     box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   overflow-y: scroll;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 1.8rem;
+   color: var(--contactformMain);
+   background-color: var(--contactformBgMain);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 700;
+   text-align: center;
+}
+
+p {
+   line-height: 1.45;
+   margin-bottom: 1rem;
+   font-weight: 300;
+   text-align: center;
+}
+
