@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Form validation example!</title>
+   <link rel="stylesheet" href="form_styles.css">
+</head>
+<body>
+   <div class="form_val">
+      <h1>Complete the form below</h1>
+      <form action="process.php" method="POST" id="form">
+         <fieldset>
+            <label for="name">Name: <em>*</em> </label>
+            <input type="text" id="name" name="name">
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone">
+            <label for="email">Email: <em>*</em> </label>
+            <input type="email" id="email" name="email">
+            <label for="fax">Fax: <em>*</em> </label>
+            <input type="number" id="fax" name="fax">
+            <label for="comments">Comments: <em>*</em> </label>
+            <p class="required_fields">* required fields</p>
+            <input type="submit" name="submit" id="submit">
+         </fieldset>
+      </form>
+   </div>
 
+</body>
+</html>
