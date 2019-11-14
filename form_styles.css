@@ -59,10 +59,10 @@ p {
 .contact_form {
    display: flex;
    flex-direction: column;
+   margin-top: 2rem;
 }
 .form_item {
    display: flex;
-   padding: .5rem 0;
 }
 
 .form_item-first,
@@ -119,4 +119,5 @@ input[type="submit"]:focus{
 span.aster {
    color: var(--contactformDanger);
    margin: .2rem;
+   font-weight: bold;
 }
