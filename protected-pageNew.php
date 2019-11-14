@@ -7,7 +7,7 @@
    if(isset($_SESSION["isLoggedIn"])){
 
    }else{
-      header('Location: loginNew.php?isBlock=true');
+      header('Location: loginNew.php?isBlocked=true');
    }
 ?>
 

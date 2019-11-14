@@ -1,6 +1,8 @@
 <?php
    session_start();
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,13 +43,16 @@ THEFORM;
             }
        ?>
 
-       <?php 
-           
-               $isBlock = $_GET["isBlock"];
-               $badUserCredentials = $_GET["badUserCredentials"];
-            
+       <?php
+
+
+             if(isset($_GET['isBlock']) && isset($_GET['badUserCredentials'])){
+               $isBlocked = $_GET['isBlocked']; 
+               $badUserCredentials = $_GET['badUserCredentials']; 
+             }
+
 // conditional to decide which message to send via querystring
-            if(isset($isBlock)){
+            if(isset($isBlocked)){
                echo "<h2>You need to log in buddy!</h2>";
                echo "<script>document.getElementById('username').focus();</script>";
             }else if(($badUserCredentials)){
