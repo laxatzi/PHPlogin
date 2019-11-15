@@ -18,7 +18,7 @@
                <label for="name"><span class="aster">&ast;</span>Name:</label>
             </div>
             <div class="form_item-second">
-               <input type="text" id="name" name="name" placeholder="Enter your name" required>
+               <input type="text" id="name" name="name" placeholder="Enter your name" required value="<?php echo $form['name']; ?>"><?php echo $error['name'] ?>
             </div>
          </div>
          <div class="form_item">
@@ -26,7 +26,7 @@
                 <label for="phone"><span class="aster">&ast;</span>Phone:</label>
             </div>
             <div class="form_item-second">
-                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required value="<?php echo $form['phone']; ?>"><?php echo $error['phone'] ?>
             </div>
          </div>
          <div class="form_item">
@@ -34,7 +34,7 @@
                 <label for="email"><span class="aster">&ast;</span>Email:</label>
             </div>
             <div class="form_item-second">
-               <input type="email" id="email" name="email" placeholder="Enter your email" required>
+               <input type="email" id="email" name="email" placeholder="Enter your email" required value="<?php echo $form['email']; ?>"><?php echo $error['email'] ?>
             </div>
          </div>
          <div class="form_item">
@@ -50,7 +50,7 @@
                 <label for="comments"><span class="aster">&ast;</span>Comments: </label>
             </div>
             <div class="form_item-second">
-                <textarea class="form-control"    placeholder="Comment here..." required></textarea>
+                <textarea class="form-control"  name="message"  placeholder="Enter your message here ..." required><?php echo $form['message']; ?><?php echo $error['message'] ?></textarea>
             </div>
          </div>
          <div class="form_submit">
