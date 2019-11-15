@@ -26,7 +26,7 @@
                 <label for="phone"><span class="aster">&ast;</span>Phone:</label>
             </div>
             <div class="form_item-second">
-                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required value="<?php echo $form['phone']; ?>"><?php echo $error['phone'] ?>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
             </div>
          </div>
          <div class="form_item">
