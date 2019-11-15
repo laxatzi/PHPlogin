@@ -24,7 +24,7 @@
          </div>
          <div class="form_item">
             <div class="form_item-first">
-                <label for="phone"><span class="aster">&ast;</span>Phone:</label>
+                <label for="phone">Phone:</label>
             </div>
             <div class="form_item-second">
                 <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
