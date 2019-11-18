@@ -5,7 +5,7 @@
  $error_open = "<label class='error'>";
  $error_close = "</label>";
  $valid_form = true;
- $redirect = "success.php";
+ $redirect = "success.php"; // what happens after submitting  succeeds
    // another variable to hold all form_elements names in the form (included those not required)
  $form_elements = array('name', 'email', 'phone','fax', 'message');
   // another variable to hold all form_elements names REQUIRED to be filled
@@ -42,7 +42,7 @@
 
     // next step is checking form validity => if an element that is not valid we want to display the form again and set these value to false
     if($valid_form){
-      // redirect
+      // redirect...usually to a page where you have put your mailscript 
       header("Location: ". $redirect);
     }
     else // if for some reason the form doesnt pass validation we want to display the form back to the user

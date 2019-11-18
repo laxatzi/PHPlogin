@@ -12,13 +12,13 @@
 
    <h1>Complete the form to be in touch!</h1>
    <div class="container">
-      <form action="process.php" method="POST" id="contact_form" class="contact_form">
+      <form action="" method="POST" id="contact_form" class="contact_form">
          <div class="form_item">
             <div class="form_item-first">
                <label for="name"><span class="aster">&ast;</span>Name:</label>
             </div>
             <div class="form_item-second">
-               <input type="text" id="name" name="name" placeholder="Enter your name" required value="<?php echo $form['name']; ?>"><?php echo $error['name'] ?>
+               <input type="text" id="name" name="name" placeholder="Enter your name"  value="<?php echo $form['name']; ?>"><?php echo $error['name'] ?>
             </div>
          </div>
 
@@ -36,7 +36,7 @@
                 <label for="email"><span class="aster">&ast;</span>Email:</label>
             </div>
             <div class="form_item-second">
-               <input type="email" id="email" name="email" placeholder="Enter your email" required value="<?php echo $form['email']; ?>"><?php echo $error['email'] ?>
+               <input type="email" id="email" name="email" placeholder="Enter your email"  value="<?php echo $form['email']; ?>"><?php echo $error['email'] ?>
             </div>
          </div>
 
@@ -51,10 +51,10 @@
 
          <div class="form_item">
             <div class="form_item-first">
-                <label for="comments"><span class="aster">&ast;</span>Comments: </label>
+                <label for="comments">Comments: </label>
             </div>
             <div class="form_item-second">
-                <textarea class="form-control"  name="message"  placeholder="Enter your message here ..." required><?php echo $form['message']; ?><?php echo $error['message'] ?></textarea>
+                <textarea class="form-control"  name="message"  placeholder="Enter your message here ..."><?php echo $form['message']; ?></textarea>
             </div>
          </div>
 
