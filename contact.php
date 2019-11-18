@@ -11,13 +11,16 @@
   // another variable to hold all form_elements names REQUIRED to be filled
  $required = array('name', 'email', 'message');
  
- //i want each form element to start at an empty state 
+ //we want to make sure that this "error" variables start out as blank
+ // we use a foreach loop to 'update' all error variables without repeating code
  foreach($required as $require){
     $error[$require] = "";
  }
+
 // if submit button clicked and form is submitted...go ahead and process the form
   if(isset($_POST['submit'])) {
-   // process form
+   // PROCESS FORM
+
    // get form data
    foreach($form_elements as $element){
       $form[$element] = htmlspecialchars($_POST[$element]); //htmlspecialchars make sure all characters in the input are valid...this statement is gonna loop through each or our form elements and its gonna set our form array by grab the form data (names) from the form 
@@ -51,7 +54,7 @@
       foreach($form_elements as $element){
          $form[$element] = '';
       }
-      // display the form
+      // DISPLAY FORM (since its not submitted yet)
          include('form_validation.php');
    } //end else
 ?>
