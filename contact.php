@@ -1,11 +1,14 @@
 <?php
      // variables
+ $to = 'laxatzi@gmail.com';
+ $subject = 'Message for your website';
  $error_open = "<label class='error'>";
  $error_close = "</label>";
  $valid_form = true;
  $redirect = "success.php";
+   // another variable to hold all form_elements names in the form (included those not required)
  $form_elements = array('name', 'email', 'phone','fax', 'message');
-  // another variable to hold all form_elements required to be filled
+  // another variable to hold all form_elements names REQUIRED to be filled
  $required = array('name', 'email', 'message');
  
  //i want each form element to start at an empty state 
