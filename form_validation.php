@@ -7,7 +7,6 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Form validation example!</title>
    <link rel="stylesheet" href="form_styles.css">
-   
 </head>
 <body>
 
@@ -22,14 +21,16 @@
                <input type="text" id="name" name="name" placeholder="Enter your name" required value="<?php echo $form['name']; ?>"><?php echo $error['name'] ?>
             </div>
          </div>
+
          <div class="form_item">
             <div class="form_item-first">
-                <label for="phone"><span class="aster">&ast;</span>Phone:</label>
+                <label for="phone">Phone:</label>
             </div>
             <div class="form_item-second">
                 <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
             </div>
          </div>
+
          <div class="form_item">
             <div class="form_item-first">
                 <label for="email"><span class="aster">&ast;</span>Email:</label>
@@ -38,6 +39,7 @@
                <input type="email" id="email" name="email" placeholder="Enter your email" required value="<?php echo $form['email']; ?>"><?php echo $error['email'] ?>
             </div>
          </div>
+
          <div class="form_item">
             <div class="form_item-first">
                 <label for="fax">Fax:</label>
@@ -46,6 +48,7 @@
                 <input type="number" id="fax" name="fax" placeholder="Enter fax number">
             </div>
          </div>
+
          <div class="form_item">
             <div class="form_item-first">
                 <label for="comments"><span class="aster">&ast;</span>Comments: </label>
@@ -54,10 +57,11 @@
                 <textarea class="form-control"  name="message"  placeholder="Enter your message here ..." required><?php echo $form['message']; ?><?php echo $error['message'] ?></textarea>
             </div>
          </div>
+
          <div class="form_submit">
             <input type="submit" name="submit" id="submit" value="Send">
          </div>
-         <small class="fine"><span class="aster">&ast;</span>Fields marked with asterisk are mandatory</small>
+         <small class="fine"><span class="aster">&ast;</span>Fields marked with asterisk are     mandatory</small>
          </div>
       </form>
    </div>

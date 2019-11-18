@@ -20,6 +20,20 @@
       $form[$element] = htmlspecialchars($_POST[$element]); //htmlspecialchars make sure all characters in the input are valid...this statement is gonna loop through each or our form elements and its gonna set our form array by grab the form data (names) from the form 
    }
     // the next step is to actually check this form elements
+    if($form['name'] == ""){
+       $error['name'] = $error_open . "Please fill in required(marked with asterisk) fields!" . $error_close;
+       $valid_form = false;
+    }
+    if($form['email'] == ""){
+      $error['email'] = $error_open . "Please fill in required(marked with asterisk) fields!" . $error_close;
+      $valid_form = false;
+   }
+   if($form['message'] == ""){
+      $error['message'] =$error_open . "Please fill in required(marked with asterisk) fields!" . $error_close;
+      $valid_form = false;
+   }
+
+
     // next step is checking form validity => if an element that is not valid we want to display the form again and set these value to false
     if($valid_form){
       // redirect
@@ -29,13 +43,13 @@
 {
    include('form_validation.php');
 }
-   }
+   } // end if
    else{
       foreach($form_elements as $element){
          $form[$element] = '';
       }
       // display the form
          include('form_validation.php');
-   }
+   } //end else
 ?>
 
